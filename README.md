@@ -1,6 +1,8 @@
 # Glitch's Ledger code for AresMUSH
 
+**************************************
 **NO SUPPORT PROVIDED GOOD LUCK :)**
+**************************************
 
 This system was created by Glitch and used extensively on City of Glass to manage locked notes. Ledger is fully customizable and flexible, so people can freely use the config files for it as just a reference for other stuff they want to do with it.
 

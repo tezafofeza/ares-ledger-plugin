@@ -1,0 +1,5 @@
+{{#if this.char.custom.ledger}}
+{{#each this.char.custom.ledger as |c| }}
+<Ledger @char={{this.char}} @collection={{c.title}} @order={{c.order}} @ledger={{c}} />
+{{/each}}
+{{/if}}

@@ -1,0 +1,260 @@
+---
+ledger:
+  collections:
+    Ledger:
+      order: 1
+      has_collection: everyone
+      collection_role: storyteller
+      stacks:
+        beats:
+          has_stack: everyone
+          display: table
+          view:
+          - owner
+          - storyteller
+          fields:
+          - name: Amount
+          - name: Description
+          - name: Date
+          table_fields:
+          - Amount
+          - Description
+          - Date
+        equipment:
+          title: Equipment
+          display: card
+          has_stack: everyone
+          lock: storyteller
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          view: everyone
+          delete:
+          - owner
+          - storyteller
+          lockable: true
+          templates:
+          - Armor
+          - Weapons
+          - Equipment
+          - Services
+          footnote:
+          - book
+          - page
+        conditions:
+          display: table
+          table_fields:
+          - Name
+          - Reference
+          - Persistent
+          - Date
+          - Note
+          templates:
+          - Conditions
+          lockable: false
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          view: everyone
+          has_stack: everyone
+          delete:
+          - owner
+          - storyteller
+        aspirations:
+          templates: 
+          lockable: false
+          has_stack: everyone
+          display: table
+          table_fields:
+          - Name
+          - Length
+          - Description
+          fields:
+          - name: Name
+          - name: Length
+            type: select
+            select:
+            - Long-Term
+            - Short-Term
+          - name: Description
+            type: text
+        changeling:
+          title: Changeling
+          has_stack: changeling
+          lockable: true
+          templates:
+          - Touchstones
+          - Frailties
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        changeling_items:
+          title: Changeling Items
+          has_stack: changeling
+          lockable: true
+          templates:
+          - Tokens
+          - Goblin Fruit
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+          footnote:
+          - motley
+        demon:
+          title: Demon
+          has_stack: demon
+          lockable: true
+          templates:
+          - Covers
+          - Glitches
+          - Pacts
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        demon_items:
+          title: Demon Items
+          has_stack: demon
+          lockable: true
+          templates:
+          - Gadgets
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        cipher:
+          title: Cipher
+          has_stack: demon
+          lockable: true
+          templates:
+          - Keys
+          - Interlocks
+          - Improvised Exploit
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        cipher_secrets:
+          title: Cipher Secrets
+          has_stack: demon
+          lockable: true
+          templates:
+          - Cipher Secrets
+          add:
+          - storyteller
+          edit:
+          - storyteller
+          delete:
+          - storyteller
+          view:
+          - storyteller
+        stigmatic:
+          title: Stigmatic
+          has_stack: stigmatic
+          lockable: true
+          templates:
+          - Stigmata
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        mage:
+          has_stack: mage
+          lockable: true
+          templates:
+          - Spell Control
+          - Yantras
+          - Grimoire
+          - Attainments
+        props:
+          title: Props
+          has_stack: everyone
+          lockable: true
+          templates:
+          - Artifact
+          - Creature
+          - Enhanced Item
+          - Gadget
+          - Imbued Item
+          - Pact Benefit
+          - Token
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          delete:
+          - owner
+          - storyteller
+          view: everyone
+        notes:
+          lockable: true
+          has_stack: everyone
+          fields:
+          - name: Name
+          - name: Description
+            type: text
+          add:
+          - owner
+          - storyteller
+          edit:
+          - owner
+          - storyteller
+          view: everyone
+        private_notes:
+          title: Private Notes
+          has_stack: everyone
+          lockable: true
+          fields:
+          - name: Name
+          - name: Description
+            type: text
+          add: owner
+          edit: owner
+          view: owner
+  universal_role: storyteller

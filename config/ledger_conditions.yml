@@ -1,0 +1,792 @@
+---
+ledger:
+  Conditions:
+    fields:
+    - name: Name
+    - name: Reference
+    - name: Persistent
+      type: boolean
+    - name: Date
+    - name: Note
+      type: text
+    templates:
+    - name: Activated
+      persistent: true
+      book: 'DtD: Heirs to Hell'
+      page: 35
+      reference: HtH p.35
+    - name: Acute Symptoms
+      persistent: false
+      book: Hurt Locker
+      page: 87
+      reference: HL p.87
+    - name: Addicted
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 333
+      reference: CtL p.333
+    - name: Adrenalish Rush
+      persistent: false
+      book: Condition Positive
+      page: 5
+      reference: CP p.5
+    - name: Aetheric Bleed
+      persistent: false
+      book: Demon the Descent
+      page: 211
+      reference: DtD p.211
+    - name: Alert
+      persistent: false
+      book: Condition Positive
+      page: 5
+      reference: CP p.5
+    - name: Amnesia
+      persistent: true
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: An Eye for Disorder
+      persistent: true
+      book: Demon the Descent
+      page: 97
+      reference: DtD p.97
+    - name: Angel Empathy
+      persistent: true
+      book: Demon the Descent
+      page: 95
+      reference: DtD p.95
+    - name: Arcadian Dreams
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 333
+      reference: CtL p.333
+    - name: Arm Disability
+      persistent: true
+      book: Hurt Locker
+      page: 57
+      reference: HL p.57
+    - name: Awestruck
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 333
+      reference: CtL p.333
+    - name: Backdoor
+      persistent: false
+      book: Condition Positive
+      page: 5
+      reference: CP p.5
+    - name: Beast Whisperer
+      persistent: false
+      book: Condition Positive
+      page: 5
+      reference: CP p.5
+    - name: Behind  Your Eyes
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 140
+      reference: K&K p.140
+    - name: Berserk
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 334
+      reference: CtL p.334
+    - name: Bestial
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 334
+      reference: CtL p.334
+    - name: Betrayed
+      persistent: true
+      book: Demon the Descent
+      page: 119
+      reference: DtD p.119
+    - name: Blackballed
+      persistent: false
+      book: Demon the Descent
+      page: 120
+      reference: DtD p.120
+    - name: Blind
+      persistent: false
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Blown
+      persistent: true
+      book: Demon the Descent
+      page: 119
+      reference: DtD p.119
+    - name: Bonded
+      persistent: false
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Broken
+      persistent: true
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Burn-Coded
+      persistent: false
+      book: 'DtD: Demon Storytelling Guide'
+      page: 120
+      reference: DSG p.120
+    - name: Captivated
+      persistent: false
+      book: Demon the Descent
+      page: 211
+      reference: DtD p.211
+    - name: Caregiver
+      persistent: false
+      book: Condition Positive
+      page: 5
+      reference: CP p.5
+    - name: Catalogued
+      persistent: false
+      book: 'DtD: Heirs to Hell'
+      page: 35
+      reference: HtH p.35
+    - name: Charmed
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 315
+      reference: MtA p.315
+    - name: Chronic Agony
+      persistent: true
+      book: Hurt Locker
+      page: 57
+      reference: HL p.57
+    - name: Chronic Sickness
+      persistent: true
+      book: Hurt Locker
+      page: 57
+      reference: HL p.57
+    - name: Comatose
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 334
+      reference: CtL p.334
+    - name: Competitive
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 335
+      reference: CtL p.335
+    - name: Conduit
+      persistent: false
+      book: Condition Positive
+      page: 6
+      reference: CP p.6
+    - name: Confused
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 335
+      reference: CtL p.335
+    - name: Connected
+      persistent: true
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Cowed
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 335
+      reference: CtL p.335
+    - name: Crippled
+      persistent: true
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Cursed
+      persistent: true
+      book: 'CtL: Kith and Kin'
+      page: 140
+      reference: K&K p.140
+    - name: Deaf
+      persistent: true
+      book: Hurt Locker
+      page: 58
+      reference: HL p.58
+    - name: Deep Kenning
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 140
+      reference: K&K p.140
+    - name: Defeated
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 315
+      reference: MtA p.315
+    - name: Delusional
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 335
+      reference: CtL p.335
+    - name: Demonic Disconnect
+      persistent: false
+      book: Demon the Descent
+      page: 209
+      reference: DtD p.209
+    - name: Demoralized
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 335
+      reference: CtL p.335
+    - name: Deprived
+      persistent: false
+      book: Chronicles of Darkness
+      page: 288
+      reference: CoD p.288
+    - name: Disabled
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 336
+      reference: CtL p.336
+    - name: Disoriented
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 336
+      reference: CtL p.336
+    - name: Disoriented
+      persistent: false
+      book: Demon the Descent
+      page: 211
+      reference: DtD p.211
+    - name: Dissociation
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 336
+      reference: CtL p.336
+    - name: Distracted
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 336
+      reference: CtL p.336
+    - name: Dream Assailant
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 336
+      reference: CtL p.336
+    - name: Dream Infiltrator
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 337
+      reference: CtL p.337
+    - name: Dream Intruder
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 338
+      reference: CtL p.338
+    - name: Egomaniac
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 141
+      reference: K&K p.141
+    - name: Embarrassing Secret
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Enchanted Obligation
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 141
+      reference: K&K p.141
+    - name: Endgame
+      persistent: true
+      book: Hurt Locker
+      page: 83
+      reference: HL p.83
+    - name: Enervated
+      persistent: true
+      book: Mage the Awakening, Second Edition
+      page: 315
+      reference: MtA p.315
+    - name: Examined
+      persistent: false
+      book: 'DtD: Heirs to Hell'
+      page: 35
+      reference: HtH p.35
+    - name: Exarchal Dreams
+      persistent: true
+      book: 'MtA: Signs of Sorcery'
+      page: 56
+      reference: SoS p.56
+    - name: Faith
+      persistent: true
+      book: 'DtD: Demon Storytelling Guide'
+      page: 81
+      reference: DSG p.81
+    - name: Fatigued
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 338
+      reference: CtL p.338
+    - name: Fearsome
+      persistent: false
+      book: Condition Positive
+      page: 6
+      reference: CP p.6
+    - name: Fixated
+      persistent: false
+      book: Hurt Locker
+      page: 150
+      reference: HL p.150
+    - name: Flagged
+      persistent: false
+      book: Demon the Descent
+      page: 120
+      reference: DtD p.120
+    - name: Fragile
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 339
+      reference: CtL p.339
+    - name: Frightened
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 339
+      reference: CtL p.339
+    - name: Fugue
+      persistent: true
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Gift of Gab
+      persistent: false
+      book: Condition Positive
+      page: 6
+      reference: CP p.6
+    - name: Glamour Addicted
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 339
+      reference: CtL p.339
+    - name: Goblin Queen
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 340
+      reference: CtL p.340
+    - name: Guilty
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Hedge Addiction
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 340
+      reference: CtL p.340
+    - name: Hedge Denizen
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 340
+      reference: CtL p.340
+    - name: Hexed
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 141
+      reference: K&K p.141
+    - name: Humbled
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 316
+      reference: MtA p.316
+    - name: Hunted
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 342
+      reference: CtL p.342
+    - name: Hunted
+      persistent: true
+      book: Demon the Descent
+      page: 119
+      reference: DtD p.119
+    - name: I Know Someone
+      persistent: true
+      book: Demon the Descent
+      page: 99
+      reference: DtD p.99
+    - name: Icon Shard
+      persistent: true
+      book: 'CtL: Kith and Kin'
+      page: 141
+      reference: K&K p.141
+    - name: Implanted
+      persistent: true
+      book: 'DtD: Flowers of Hell'
+      page: 155
+      reference: FoH p.155
+    - name: Imposter
+      persistent: false
+      book: 'DtD: Flowers of Hell'
+      page: 119
+      reference: FoH p.119
+    - name: Indebted
+      persistent: false
+      book: 'CtL: Kith and Kin'
+      page: 142
+      reference: K&K p.142
+    - name: Informed
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Inspired
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Kingmaker
+      persistent: false
+      book: Condition Positive
+      page: 7
+      reference: CP p.7
+    - name: Kithseeker
+      persistent: true
+      book: 'CtL: Kith and Kin'
+      page: 142
+      reference: K&K p.142
+    - name: Latent Symptoms
+      persistent: false
+      book: Hurt Locker
+      page: 87
+      reference: HL p.87
+    - name: Leg Disability
+      persistent: true
+      book: Hurt Locker
+      page: 58
+      reference: HL p.58
+    - name: Legacy Builder
+      persistent: false
+      book: Condition Positive
+      page: 7
+      reference: CP p.7
+    - name: Lethargic
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 342
+      reference: CtL p.342
+    - name: Leveraged
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Lie Detector
+      persistent: false
+      book: Condition Positive
+      page: 8
+      reference: CP p.8
+    - name: Locksmith
+      persistent: false
+      book: Condition Positive
+      page: 8
+      reference: CP p.8
+    - name: Lost
+      persistent: false
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Madness
+      persistent: true
+      book: Chronicles of Darkness
+      page: 289
+      reference: CoD p.289
+    - name: Megalomaniacal
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 317
+      reference: MtA p.317
+    - name: Memory Hole
+      persistent: false
+      book: 'DtD: Flowers of Hell'
+      page: 80
+      reference: FoH p.80
+    - name: Methodical
+      persistent: false
+      book: Condition Positive
+      page: 8
+      reference: CP p.8
+    - name: Missing Time
+      persistent: true
+      book: Hurt Locker
+      page: 83
+      reference: HL p.83
+    - name: Mute
+      persistent: true
+      book: Chronicles of Darkness
+      page: 290
+      reference: CoD p.290
+    - name: Mystery Commands
+      persistent: true
+      book: Mage the Awakening, Second Edition
+      page: 317
+      reference: MtA p.317
+    - name: Noted
+      persistent: false
+      book: 'DtD: Heirs to Hell'
+      page: 35
+      reference: HtH p.35
+    - name: Notoriety
+      persistent: false
+      book: Chronicles of Darkness
+      page: 290
+      reference: CoD p.290
+    - name: Numb
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 343
+      reference: CtL p.343
+    - name: Oathbreaker
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 343
+      reference: CtL p.343
+    - name: Obligation
+      persistent: false
+      book: 'MtA: Signs of Sorcery'
+      page: 57
+      reference: SoS p.57
+    - name: Obliged
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 343
+      reference: CtL p.343
+    - name: Oblivious
+      persistent: false
+      book: Hurt Locker
+      page: 150
+      reference: HL p.150
+    - name: Obsession
+      persistent: true
+      book: Chronicles of Darkness
+      page: 290
+      reference: CoD p.290
+    - name: Of The Machine
+      persistent: false
+      book: 'DtD: Flowers of Hell'
+      page: 78
+      reference: FoH p.78
+    - name: One-Hit Wonder
+      persistent: false
+      book: Condition Positive
+      page: 8
+      reference: CP p.8
+    - name: Overclocked
+      persistent: false
+      book: 'DtD: Flowers of Hell'
+      page: 81
+      reference: FoH p.81
+    - name: Paranoid
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 344
+      reference: CtL p.344
+    - name: Pattern Recognizer
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Phantom Pain
+      persistent: true
+      book: 'DtD: Heirs to Hell'
+      page: 160
+      reference: HtH p.160
+    - name: Plausible Denial
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Plugged In
+      persistent: false
+      book: Demon the Descent
+      page: 118
+      reference: DtD p.118
+    - name: Precise Shooter
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Prepared for Anything
+      persistent: true
+      book: Demon the Descent
+      page: 93
+      reference: DtD p.93
+    - name: Pride In Your Work
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Progressive Infection
+      persistent: false
+      book: Hurt Locker
+      page: 87
+      reference: HL p.87
+    - name: Psychoanalyst
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Quick Fingers
+      persistent: false
+      book: Condition Positive
+      page: 9
+      reference: CP p.9
+    - name: Rampant
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 317
+      reference: MtA p.317
+    - name: Ravaged
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 344
+      reference: CtL p.344
+    - name: Reckless
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 344
+      reference: CtL p.344
+    - name: Reluctant Aggressor
+      persistent: false
+      book: Hurt Locker
+      page: 150
+      reference: HL p.150
+    - name: Researcher
+      persistent: false
+      book: Condition Positive
+      page: 10
+      reference: CP p.10
+    - name: Retreating
+      persistent: false
+      book: Condition Positive
+      page: 10
+      reference: CP p.10
+    - name: Shaken
+      persistent: false
+      book: Chronicles of Darkness
+      page: 290
+      reference: CoD p.290
+    - name: Sickly
+      persistent: true
+      book: 'DtD: Demon Storytelling Guide'
+      page: 105
+      reference: DSG p.105
+    - name: Sleepwalking
+      persistent: true
+      book: Changeling the Lost, Second Edition
+      page: 344
+      reference: CtL p.344
+    - name: Slow Moving
+      persistent: false
+      book: Condition Positive
+      page: 10
+      reference: CP p.10
+    - name: Soul Cracks
+      persistent: true
+      book: 'MtA: Signs of Sorcery'
+      page: 89
+      reference: SoS p.89
+    - name: Soul Shocked
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 345
+      reference: CtL p.345
+    - name: Soulless
+      persistent: true
+      book: Chronicles of Darkness
+      page: 290
+      reference: CoD p.290
+    - name: Spooked
+      persistent: false
+      book: Chronicles of Darkness
+      page: 291
+      reference: CoD p.291
+    - name: Steadfast
+      persistent: false
+      book: Chronicles of Darkness
+      page: 291
+      reference: CoD p.291
+    - name: Stoic
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 345
+      reference: CtL p.345
+    - name: Strained
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 318
+      reference: MtA p.318
+    - name: Street Cred
+      persistent: false
+      book: Condition Positive
+      page: 10
+      reference: CP p.10
+    - name: Stunt Enthusiast
+      persistent: false
+      book: Condition Positive
+      page: 10
+      reference: CP p.10
+    - name: Surveilled
+      persistent: false
+      book: Demon the Descent
+      page: 120
+      reference: DtD p.120
+    - name: Swooned
+      persistent: false
+      book: Chronicles of Darkness
+      page: 291
+      reference: CoD p.291
+    - name: Symptomatic Flareup
+      persistent: false
+      book: Hurt Locker
+      page: 87
+      reference: HL p.87
+    - name: Tactical
+      persistent: false
+      book: Condition Positive
+      page: 11
+      reference: CP p.11
+    - name: Thrall
+      persistent: true
+      book: Mage the Awakening, Second Edition
+      page: 318
+      reference: MtA p.318
+    - name: Threatening
+      persistent: false
+      book: Condition Positive
+      page: 11
+      reference: CP p.11
+    - name: Traceless
+      persistent: false
+      book: Condition Positive
+      page: 12
+      reference: CP p.12
+    - name: Triumphant
+      persistent: false
+      book: Mage the Awakening, Second Edition
+      page: 319
+      reference: MtA p.319
+    - name: Uncalled
+      persistent: true
+      book: Demon the Descent
+      page: 78
+      reference: DtD p.78
+    - name: Volatile
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 345
+      reference: CtL p.345
+    - name: Wanton
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 346
+      reference: CtL p.346
+    - name: Warmed-Up
+      persistent: false
+      book: Condition Positive
+      page: 12
+      reference: CP p.12
+    - name: Withdrawn
+      persistent: false
+      book: Changeling the Lost, Second Edition
+      page: 346
+      reference: CtL p.346

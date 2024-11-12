@@ -1,0 +1,15 @@
+<div id="sheet" class="tab-pane fade">
+  <CodSheet @sheet={{this.char.custom.sheet}} @config={{this.char.custom.config}} />
+</div>
+
+{{#each-in this.template_components as |k c| }}
+<div id="abilities-{{k}}" class="tab-pane fade">
+  {{component c sheet=this.char.custom.sheet config=this.char.custom.config}}
+</div>
+{{/each-in}}
+
+{{#if this.char.custom.ledger}}
+{{#each this.char.custom.ledger as |c| }}
+<Ledger @char={{this.char}} @collection={{c.title}} @order={{c.order}} @ledger={{c}} />
+{{/each}}
+{{/if}}

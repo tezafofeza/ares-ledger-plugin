@@ -1,0 +1,132 @@
+---
+ledger:
+  Cipher Secrets:
+    fields:
+    - name: Key
+      type: select
+      select:
+      - Second Key
+      - Third Key
+      - Fourth Key
+    - name: Embed
+    display: table
+    table_fields:
+    - Key
+    - Embed
+  Covers:
+    fields:
+    - name: Name
+    - name: Age
+    - name: Description
+      type: text
+    - name: Notes
+      type: text
+  Gadgets:
+    fields:
+    - name: Name
+    - name: Category
+      type: select
+      select:
+      - Embedded
+      - Exploited
+    - name: Description
+      type: text
+    - name: Activation
+      type: text
+    - name: Effect
+      type: text
+    display: card
+  Glitches:
+    fields:
+    - name: Class
+      type: select
+      select:
+      - Brand
+      - Tell
+      - Emanation
+    - name: Severity
+      type: select
+      select:
+      - Minor
+      - Major
+      - Catastrophic
+    - name: Description
+      type: text
+    - name: Permanent
+      type: boolean
+    display: table
+    table_fields:
+    - Class
+    - Severity
+    - Description
+    - Permanent
+  Improvised Exploit:
+    fields:
+    - name: Name
+    - name: Exploit 1
+    - name: Exploit 2
+    - name: Dice Pool
+    - name: Action
+      type: text
+    - name: Cost
+    - name: Dramatic Failure
+      type: text
+    - name: Failure
+      type: text
+    - name: Success
+      type: text
+    - name: Exceptional Success
+      type: text
+  Interlocks:
+    fields:
+    - name: Name
+    - name: Key Embed
+    - name: Dice Pool
+    - name: Summary
+      type: text
+    - name: Dramatic Failure
+      type: text
+    - name: Failure
+      type: text
+    - name: Success
+      type: text
+    - name: Exceptional Success
+      type: text
+  Keys:
+    fields:
+    - name: Key
+      type: select
+      select:
+      - First Key
+      - Second Key
+      - Third Key
+      - Fourth Key
+    - name: Embed
+    display: table
+    table_fields:
+    - Key
+    - Embed
+  Pacts:
+    fields:
+    - name: Name
+    - name: Duration
+    - name: Benefits
+      type: text
+    display: table
+    table_fields:
+    - Name
+    - Duration
+    - Benefits
+  Stigmata:
+    fields:
+    - name: Class
+      type: select
+      select:
+      - Brand
+      - Tell
+    - name: Description
+      type: text
+    display: table
+    table_fields:
+    - Class
+    - Description

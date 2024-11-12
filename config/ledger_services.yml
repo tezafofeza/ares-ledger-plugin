@@ -1,0 +1,449 @@
+---
+ledger:
+  Services:
+    fields:
+    - name: Name
+    - name: Skill
+    - name: Die Bonus
+    - name: Availability
+    - name: Book
+    - name: Page
+    templates:
+    - name: Bad cop interrogator
+      skill: Intimidation
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Good cop interrogator
+      skill: Empathy
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Amateur Actor/Actress
+      skill: Subterfuge
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Anti-interrogation training
+      skill: Intimidation
+      availability: 4
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 279
+    - name: Antique gun repair
+      skill: Firearms
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Antiquities restoration
+      skill: Crafts
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Arrange a rave or block party
+      skill: Streetwise
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Arrange underground boxing ring
+      skill: Brawl
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Auto repair
+      skill: Crafts
+      availability: 2
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Black market access
+      skill: Streetwise
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Black market surgeon
+      skill: Medicine
+      availability: 4
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Bodyguard service
+      skill: Brawl
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Breaking and entering
+      skill: Larceny
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Buy a trained animal
+      skill: Animal Ken
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Campaign assistant
+      skill: Politics
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Catering
+      skill: Socialize
+      availability: 44989
+      die_bonus: 44928
+      book: Chronicles of Darkness
+      page: 279
+    - name: Chauffer
+      skill: Drive
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Con artistry
+      skill: Subterfuge
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Consultation on evidence
+      skill: Crafts
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Cover fire from gangs
+      skill: Firearms
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Custom equipment modifications
+      skill: Crafts
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Custom phone application
+      skill: Computer
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: 'Cutting red tape (read: bribe)'
+      skill: Politics
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Defense attorney
+      skill: Persuasion
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 279
+    - name: Deprogramming therapy
+      skill: Intimidation
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Digital image enhancement
+      skill: Computer
+      availability: 2
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Document forgery
+      skill: Expression
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 279
+    - name: Elocution consulting
+      skill: Socialize
+      availability: 3
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 279
+    - name: Escort
+      skill: Socialize
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Esoteric consultant/sage
+      skill: Occult
+      availability: 4
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Exorcist
+      skill: Occult
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Expert medical witness
+      skill: Medicine
+      availability: 4
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Fact-checking
+      skill: Science
+      availability: 2
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Falsifying research/coverup
+      skill: Science
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Field dress and preserve an animal
+      skill: Survival
+      availability: 3
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 278
+    - name: Find crash space
+      skill: Streetwise
+      availability: 2
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 279
+    - name: Gambling ringer
+      skill: Survival
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Ghostwriting
+      skill: Expression
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Graphic design/forgery
+      skill: Computer
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Historical specialist consulting
+      skill: Academics
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Hostage negotiator
+      skill: Persuasion
+      availability: 4
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 279
+    - name: Identify animal droppings
+      skill: Animal Ken
+      availability: 2
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 278
+    - name: Identify wound from obscure weapon
+      skill: Weaponry
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Investigative photography
+      skill: Investigation
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Lab access
+      skill: Science
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Meditative assistance
+      skill: Athletics
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Motivational speech
+      skill: Expression
+      availability: 3
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 279
+    - name: Neutral arbitrator
+      skill: Empathy
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Personal trainer
+      skill: Athletics
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Pickup artist
+      skill: Persuasion
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 279
+    - name: Private investigation/background check
+      skill: Crafts
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Procuring smuggled military arms
+      skill: Firearms
+      availability: 4
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Properly forged sword
+      skill: Weaponry
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Protective amulets or wards
+      skill: Occult
+      availability: 4
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 278
+    - name: Research assistance from grad students
+      skill: Academics
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Rule out natural causes of death
+      skill: Animal Ken
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Rush plastic surgery
+      skill: Medicine
+      availability: 4
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Security consulting
+      skill: Larceny
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Self-defense classes
+      skill: Brawl
+      availability: 1
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 278
+    - name: Smuggling contraband
+      skill: Streetwise
+      availability: 3
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 279
+    - name: Spin doctor
+      skill: Politics
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Stealing a protected relic
+      skill: Larceny
+      availability: 4
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Strategic distraction
+      skill: Stealth
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Stunt performance/mock crash
+      skill: Drive
+      availability: 3
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Tailing a suspect
+      skill: Stealth
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Targeted vandalism
+      skill: Stealth
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Therapy session
+      skill: Empathy
+      availability: 2
+      die_bonus: 1
+      book: Chronicles of Darkness
+      page: 279
+    - name: Throwing an athletic competition
+      skill: Athletics
+      availability: 4
+      die_bonus: 4
+      book: Chronicles of Darkness
+      page: 278
+    - name: Tour bus rental
+      skill: Drive
+      availability: 4
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Trail guide
+      skill: Survival
+      availability: 2
+      die_bonus: 3
+      book: Chronicles of Darkness
+      page: 278
+    - name: Training in archaic warfare
+      skill: Weaponry
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Translation of a dead language
+      skill: Academics
+      availability: 3
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278
+    - name: Weatherproof a shelter
+      skill: Survival
+      availability: 2
+      die_bonus: 2
+      book: Chronicles of Darkness
+      page: 278

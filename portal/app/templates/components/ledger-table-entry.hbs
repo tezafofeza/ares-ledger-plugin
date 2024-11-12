@@ -1,0 +1,40 @@
+{{#if (and this.stack.lockable)}}
+<td>
+  {{#if this.entry.locked}}
+  <span class="hint--right ps-2" aria-label="Locked by {{this.entry.locked_by.name}}"><i class="fas fa-lock"></i></span>
+  {{/if}}
+</td>
+{{/if}}
+{{#each this.filteredFields as |field|}}
+<td>
+  <span class="entry-field-value">
+    <AnsiFormat @text={{get this.tableEntryDisplay field}} />
+  </span>
+</td>
+{{/each}}
+
+{{#if this.hasOptions}}
+<td>
+  <div class="text-end table-entry-controls">
+    {{#if (and this.stack.lockable this.stack.lock)}}
+    {{#if this.entry.locked}}
+    <a href="#" class="hint--top" aria-label="Unlock" {{action 'unlockEntry' }}><i class="fas fa-unlock"
+        aria-label="Unlock Entry"></i></a>
+    {{else}}
+    <a href="#" class="hint--top" aria-label="Lock" {{action 'lockEntry' }}><i class="fas fa-lock"
+        aria-label="Lock Entry"></i></a>
+    {{/if}}
+    {{/if}}
+    {{#unless this.entry.locked}}
+    {{#if this.stack.edit}}
+    <a href="#" class="hint--top" aria-label="Edit" {{action 'editEntry' }}><i class="fas fa-edit"
+        aria-label="Edit Entry"></i></a>
+    {{/if}}
+    {{#if this.stack.delete}}
+    <a href="#" class="hint--top" aria-label="Delete" {{action 'deleteEntry' }}><i class="fas fa-trash"
+        aria-label="Delete Entry"></i></a>
+    {{/if}}
+    {{/unless}}
+  </div>
+</td>
+{{/if}}

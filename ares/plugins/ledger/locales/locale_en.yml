@@ -1,0 +1,14 @@
+---
+en:
+  ledger:
+    cannot_edit_locked_entry: Cannot edit locked entry
+    entry_already_locked: Entry already locked
+    entry_must_have_a_name: Entry must have a name
+    invalid_char: Invalid Character
+    invalid_collection: Invalid Collection
+    invalid_data: Invalid Data
+    invalid_entry_input: Invalid Entry Input
+    invalid_stack: Invalid Stack
+    invalid_template: Invalid Template
+    no_entry_found: No entry found
+    permission_denied: Permission Denied

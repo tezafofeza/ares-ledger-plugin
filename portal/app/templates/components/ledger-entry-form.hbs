@@ -1,0 +1,41 @@
+<BsModalSimple @title="{{this.formEntry.name}}" @closeTitle="Cancel" @submitTitle="{{if this.add 'Add' 'Update'}}"
+  @size={{null}} @fade={{true}} @open={{this.showEditEntry}} @onSubmit={{action (if this.add 'addEntry' 'updateEntry'
+  )}} @onHidden={{action (mut this.showEditEntry) false}}>
+
+  <div class="row mb-4">
+    {{#if (and this.add this.templates)}}
+    <PowerSelect @options={{this.templates}} @searchEnabled={{true}} @searchField="name"
+      @placeholder="Select {{this.entry._template}}" @selected={{this.selectedTemplate}}
+      @onChange={{action "updateTemplate" }} as |e|>
+      {{e.name}}
+    </PowerSelect>
+    {{/if}}
+  </div>
+
+  <div class="row">
+    {{#each this.fields as |f|}}
+    {{#if (eq f.type 'text')}}
+    <div class="col-13 mb-2">
+      <div class="label">{{f.name}}</div>
+      <MarkdownEditor onkeyup={{action 'updateEntryForm' f.key}} @text={{get this.entry f.key}} />
+    </div>
+    {{else}}
+    <div class="col-sm-12 mb-2 d-flex justify-content-between align-items-center">
+      <span class="label">{{f.name}}</span>
+      {{#if (eq f.type 'input')}}
+      <input class="w-50" type="text" onkeyup={{action 'updateEntryForm' f.key}} value={{get this.entry f.key}} />
+      {{else if (eq f.type 'select')}}
+      <select class="w-50" onchange={{action 'updateEntryForm' f.key}}>
+        <option> Select {{f.name}} </option>
+        {{#each f.select as |s|}}
+        <option value={{s}} selected={{eq s (get this.entry f.key)}}>{{s}}</option>
+        {{/each}}
+      </select>
+      {{else if (eq f.type 'boolean')}}
+      <input type="checkbox" onchange={{action 'updateEntryForm' f.key}} checked={{(get this.entry f.key)}} />
+      {{/if}}
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+</BsModalSimple>

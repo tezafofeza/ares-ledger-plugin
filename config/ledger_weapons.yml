@@ -1,0 +1,1051 @@
+---
+ledger:
+  Weapons:
+    fields:
+    - name: Name
+    - name: Type
+    - name: Damage
+    - name: Range
+    - name: Clip
+    - name: Initiative
+    - name: Strength
+    - name: Size
+    - name: Availability
+    - name: Example
+    - name: Spec
+    - name: Notes
+    - name: Book
+    - name: Page
+    templates:
+    - name: Assault Rifle
+      type: Ranged
+      damage: 3
+      range: 150/300/600
+      clip: 42+1
+      initiative: -3
+      strength: 3
+      size: 3
+      availability: 3
+      example: Steyr-AUG (5.56mm)
+      spec: Autofire, Two-handed
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Automatic Grenade Launcher
+      type: Grenade Launcher
+      damage: 
+      range: Extreme
+      clip: High
+      initiative: 
+      strength: 
+      size: 4
+      availability: 5
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Baton
+      type: Grenade Ammunition
+      damage: 1
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 2
+      example: 
+      spec: Knockdown, Stun
+      notes: No explosion
+      book: Hurt Locker
+      page: 136
+    - name: Baton
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 2
+      availability: 
+      example: 
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Battle Axe
+      type: Melee
+      damage: 3
+      range: 
+      clip: 
+      initiative: -4
+      strength: 3
+      size: 3
+      availability: 3
+      example: 
+      spec: 9-again, Two-handed
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Blowtorch
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: Incendiary, Piercing 2
+      notes: Inflicts Blinded Tilt on attacker and target unless either or both take
+        a -1 penalty to Defense
+      book: Hurt Locker
+      page: 139
+    - name: Board w/ Nail
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 
+      example: 
+      spec: Fragile, Stun
+      notes: 
+      book: Hurt Locker
+      page: 139
+    - name: Brass Knuckles
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: 0
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: 
+      notes: Uses Brawl to attack
+      book: Chronicles of Darkness
+      page: 269
+    - name: Buckshot
+      type: Grenade Ammunition
+      damage: 1
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 4
+      example: 
+      spec: Knockdown
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Catchpole
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Grapple, Reach
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Chain
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Grapple
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Chainsaw
+      type: Melee
+      damage: 5
+      range: 
+      clip: 
+      initiative: -6
+      strength: 4
+      size: 3
+      availability: 3
+      example: 
+      spec: 9-again, Two-handed
+      notes: Can be used one-handed, but doing so increases the Strength requirement
+        by 1.
+      book: Chronicles of Darkness
+      page: 269
+    - name: Civilian Flamethrower
+      type: Flamethrower
+      damage: Special
+      range: Short
+      clip: High
+      initiative: -4
+      strength: 3
+      size: 4
+      availability: 3
+      example: 
+      spec: Incendiary
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Crossbow
+      type: Ranged
+      damage: 2
+      range: 40/80/160
+      clip: 1
+      initiative: -5
+      strength: 3
+      size: 3
+      availability: 3
+      example: 
+      spec: Two-handed
+      notes: Crossbows take three turns to reload between shots. A crossbow can be
+        used to deliver a stake through the heart (–3 penalty to attack rolls; must
+        deal at least 5 damage in one attack)
+      book: Chronicles of Darkness
+      page: 268
+    - name: Crowbar
+      type: Melee
+      damage: 2
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Fire Axe
+      type: Melee
+      damage: 3
+      range: 
+      clip: 
+      initiative: -4
+      strength: 3
+      size: 3
+      availability: 2
+      example: 
+      spec: 9-again, Two-handed
+      notes: Can be used one-handed, but doing so increases the Strength requirement
+        by 1.
+      book: Chronicles of Darkness
+      page: 269
+    - name: Frag, Heavy
+      type: Grenade
+      damage: 3
+      range: Thrown (A)
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 1
+      availability: 4
+      example: 
+      spec: Knockdown, Stun
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Frag, Standard
+      type: Grenade
+      damage: 2
+      range: Thrown (A)
+      clip: 
+      initiative: 0
+      strength: 2
+      size: 1
+      availability: 4
+      example: 
+      spec: Knockdown, Stun
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Great Sword
+      type: Melee
+      damage: 4
+      range: 
+      clip: 
+      initiative: -5
+      strength: 4
+      size: 3
+      availability: 4
+      example: 
+      spec: 9-again, Two-handed
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Hatchet
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -2
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: HE
+      type: Grenade Ammunition
+      damage: 3
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 4
+      example: 
+      spec: Knockdown
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: HEDP
+      type: Grenade Ammunition
+      damage: 2
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 4
+      example: 
+      spec: Knockdown, Armor piercing 4
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Improvised Shield
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -4
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Concealed
+      notes: 
+      book: Hurt Locker
+      page: 139
+    - name: Javelin
+      type: Ranged
+      damage: 2
+      range: Thrown
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 3
+      example: 
+      spec: 
+      notes: 
+      book: Changeling the Lost, Second Edition
+      page: 324
+    - name: Knife
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -1
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Knife, Hunting
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 1
+      size: 2
+      availability: 2
+      example: 
+      spec: 
+      notes: 'Enhance: Crafts or Survival'
+      book: Hurt Locker
+      page: 138
+    - name: Knife, Small
+      type: Melee
+      damage: 0
+      range: Thrown (A)
+      clip: 
+      initiative: 0
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Kusari Gama (chain)
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Grapple, Inaccurate, Reach
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Kusari Gama (sickle)
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 1
+      size: 2
+      availability: 2
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Long Bow
+      type: Ranged
+      damage: 3
+      range: Medium
+      clip: Low
+      initiative: -4
+      strength: 3
+      size: 4
+      availability: 2
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 133
+    - name: Machete
+      type: Melee
+      damage: 2
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Metal Club
+      type: Melee
+      damage: 2
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Stun
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Military Flamethrower
+      type: Flamethrower
+      damage: Special
+      range: Medium
+      clip: High
+      initiative: -5
+      strength: 3
+      size: 4
+      availability: 5
+      example: 
+      spec: Incendiary
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Molotov
+      type: Grenade
+      damage: 1
+      range: Thrown
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Incendiary
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Nail Gun
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Inaccurate, Piercing 1
+      notes: Strength + Firearms to attack
+      book: Hurt Locker
+      page: 139
+    - name: Nightstick
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: Stun
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Nunchaku
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: 1
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: Stun
+      notes: "-1 Damage and Initiative without Dexterity 3+"
+      book: Hurt Locker
+      page: 138
+    - name: Pepper spray
+      type: Ranged
+      damage: 0
+      range: 1/2/2003
+      clip: 
+      initiative: 0
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: Stun, Penalty
+      notes: Deals no damage
+      book: Changeling the Lost, Second Edition
+      page: 324
+    - name: Pipe Bomb
+      type: Grenade
+      damage: 1
+      range: Thrown
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 1
+      availability: 1
+      example: 
+      spec: Inaccurate, Stun
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Pistol, hvy
+      type: Ranged
+      damage: 2
+      range: 30/60/120
+      clip: 7+1
+      initiative: -2
+      strength: 3
+      size: 1
+      availability: 3
+      example: Colt M1911A1 (.45 ACP)
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Pistol, lt
+      type: Ranged
+      damage: 1
+      range: 20/40/80
+      clip: 17+1
+      initiative: 0
+      strength: 2
+      size: 1
+      availability: 3
+      example: Glock 17 (9mm)
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Rapier
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -2
+      strength: 1
+      size: 2
+      availability: 2
+      example: 
+      spec: Armor piercing 1
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Revolver, hvy
+      type: Ranged
+      damage: 2
+      range: 35/70/140
+      clip: 6
+      initiative: -2
+      strength: 3
+      size: 1
+      availability: 2
+      example: SW M29 (.44 Magnum)
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Revolver, lt
+      type: Ranged
+      damage: 1
+      range: 20/40/80
+      clip: 6
+      initiative: 0
+      strength: 2
+      size: 1
+      availability: 2
+      example: SW M640 (.38 Special)
+      spec: 
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Rifle
+      type: Ranged
+      damage: 4
+      range: 200/400/800
+      clip: 5+1
+      initiative: -5
+      strength: 2
+      size: 3
+      availability: 2
+      example: Remington M-700 (30.06)
+      spec: Two-handed
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Rifle, Big Game
+      type: Ranged
+      damage: 5
+      range: Extreme
+      clip: Low
+      initiative: -5
+      strength: 3
+      size: 4
+      availability: 5
+      example: Winchester Model 70 Classic Safari Express
+      spec: Stun
+      notes: Take 1 bashing damage and suffer Knocked Down Tilt if not properly braced
+        for recoil.
+      book: Hurt Locker
+      page: 133
+    - name: Sap
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -1
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: Stun
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Shield (large)
+      type: Melee
+      damage: 2
+      range: 
+      clip: 
+      initiative: -4
+      strength: 3
+      size: 3
+      availability: 2
+      example: 
+      spec: Concealed
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Shield (small)
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: Concealed
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Short Bow
+      type: Ranged
+      damage: 2
+      range: Medium
+      clip: Low
+      initiative: -3
+      strength: 2
+      size: 3
+      availability: 2
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 133
+    - name: Shotgun
+      type: Ranged
+      damage: 3
+      range: 20/40/80
+      clip: 5+1
+      initiative: -4
+      strength: 3
+      size: 2
+      availability: 2
+      example: Remington M870 (12-gauge)
+      spec: 9-again, Two-handed
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Shovel
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 1
+      example: 
+      spec: Knockdown
+      notes: 
+      book: Hurt Locker
+      page: 139
+    - name: Sledgehammer
+      type: Melee
+      damage: 3
+      range: 
+      clip: 
+      initiative: -4
+      strength: 3
+      size: 3
+      availability: 1
+      example: 
+      spec: Knockdown, Stun
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: SMG, large
+      type: Ranged
+      damage: 2
+      range: 50/100/200
+      clip: 30+1
+      initiative: -3
+      strength: 3
+      size: 2
+      availability: 3
+      example: HK MP-5 (9mm)
+      spec: Autofire, Two-handed
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: SMG, small
+      type: Ranged
+      damage: 1
+      range: 25/50/100
+      clip: 30+1
+      initiative: -2
+      strength: 2
+      size: 1
+      availability: 3
+      example: Ingram Mac-10 (9mm)
+      spec: Autofire
+      notes: 
+      book: Chronicles of Darkness
+      page: 268
+    - name: Smoke Ammunition
+      type: Grenade Ammunition
+      damage: 0
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 2
+      example: 
+      spec: Concealment
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Smoke Grenade
+      type: Grenade
+      damage: 0
+      range: Thrown (A)
+      clip: 
+      initiative: 10
+      strength: 2
+      size: 1
+      availability: 2
+      example: 
+      spec: Concealment
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Spear
+      type: Melee
+      damage: 2
+      range: 
+      clip: 
+      initiative: -2
+      strength: 2
+      size: 4
+      availability: 1
+      example: 
+      spec: "+1 Defense, Two-handed"
+      notes: The reach of a spear gives a +1 Defense bonus against opponents who are
+        unarmed or wield weapons of Size 1.
+      book: Chronicles of Darkness
+      page: 269
+    - name: Staff
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 4
+      availability: 1
+      example: 
+      spec: Knockdown, Reach, Two-handed
+      notes: 
+      book: Hurt Locker
+      page: 139
+    - name: Stake
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -4
+      strength: 1
+      size: 1
+      availability: 
+      example: 
+      spec: 
+      notes: A stake must target the heart (-3 penalty to attack rolls) and must deal
+        at least 5 damage in one attack.
+      book: Chronicles of Darkness
+      page: 269
+    - name: Stand-Alone Launcher
+      type: Grenade Launcher
+      damage: 
+      range: Long
+      clip: Low
+      initiative: 
+      strength: 3
+      size: 3
+      availability: 4
+      example: 
+      spec: 
+      notes: Take 1 bashing damage and suffer Knocked Down Tilt if not properly braced
+        for recoil.
+      book: Hurt Locker
+      page: 136
+    - name: Stun Ammunition
+      type: Grenade Ammunition
+      damage: 0
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 2
+      example: 
+      spec: Knockdown, Stun
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Stun Grenade
+      type: Grenade
+      damage: 0
+      range: Thrown (A)
+      clip: 
+      initiative: 0
+      strength: 2
+      size: 1
+      availability: 2
+      example: 
+      spec: Knockdown, Stun
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Stun gun (melee)
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 1
+      size: 1
+      availability: 1
+      example: 
+      spec: Stun
+      notes: Bonus successes don't add to modifier for damage
+      book: Chronicles of Darkness
+      page: 269
+    - name: Stun gun (ranged)
+      type: Ranged
+      damage: 1
+      range: 5
+      clip: 1
+      initiative: 0
+      strength: 1
+      size: 1
+      availability: 1
+      example: Taser
+      spec: Stun
+      notes: Bonus successes don't add to modifier for damage. Takes three turns to
+        reload between the shots to replace the compressed air cartridge.
+      book: Changeling the Lost, Second Edition
+      page: 324
+    - name: Sword
+      type: Melee
+      damage: 3
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 3
+      availability: 3
+      example: 
+      spec: 
+      notes: "+1 Durability (katana) or +1 Initiative (long sword)"
+      book: Hurt Locker
+      page: 138
+    - name: Tear Gas
+      type: Grenade Ammunition
+      damage: 0
+      range: 
+      clip: 
+      initiative: 
+      strength: 
+      size: 1
+      availability: 2
+      example: 
+      spec: Concealment
+      notes: 
+      book: Hurt Locker
+      page: 137
+    - name: Thermite
+      type: Grenade
+      damage: 3
+      range: Thrown (A)
+      clip: 
+      initiative: 5
+      strength: 2
+      size: 1
+      availability: 4
+      example: 
+      spec: Armor piercing 8, Incendiary
+      notes: 
+      book: Hurt Locker
+      page: 135
+    - name: Tiger Claws
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -1
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: Brawl
+      notes: 
+      book: Hurt Locker
+      page: 138
+    - name: Tire Iron
+      type: Melee
+      damage: 1
+      range: 
+      clip: 
+      initiative: -3
+      strength: 2
+      size: 2
+      availability: 2
+      example: 
+      spec: "+1 Defense"
+      notes: 
+      book: Chronicles of Darkness
+      page: 269
+    - name: Under-Barrel Launcher
+      type: Grenade Launcher
+      damage: 
+      range: Long
+      clip: Low
+      initiative: 
+      strength: 2
+      size: 2
+      availability: 4
+      example: 
+      spec: 
+      notes: 
+      book: Hurt Locker
+      page: 136
+    - name: Whip
+      type: Melee
+      damage: 0
+      range: 
+      clip: 
+      initiative: -2
+      strength: 1
+      size: 2
+      availability: 1
+      example: 
+      spec: Grapple, Stun
+      notes: Dexterity + Weaponry to attack
+      book: Hurt Locker
+      page: 138
+    - name: White Phosphorous
+      type: Grenade
+      damage: 3
+      range: Thrown (A)
+      clip: 
+      initiative: 5
+      strength: 2
+      size: 1
+      availability: 4
+      example: 
+      spec: Armor piercing 3, Incendiary, Concealment
+      notes: 
+      book: Hurt Locker
+      page: 135

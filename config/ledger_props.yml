@@ -1,0 +1,131 @@
+---
+ledger:
+  Artifact:
+    fields:
+    - name: Name
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Description
+      type: text
+    - name: Effect
+      type: text
+  Creature:
+    fields:
+    - name: Name
+    - name: Type
+      type: select
+      select:
+      - Cryptid
+      - Fae Mount
+      - Animal Retainer
+      - Familiar
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Special Abilities
+      type: text
+    - name: Description
+      type: text
+  Enhanced Item:
+    fields:
+    - name: Name
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Description
+      type: text
+    - name: Effect
+      type: text
+  Gadget:
+    fields:
+    - name: Name
+    - name: Category
+      type: select
+      select:
+      - Embedded
+      - Exploited
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Description
+      type: text
+    - name: Activation Roll
+    - name: Trigger
+      type: text
+    - name: Effect
+      type: text
+  Imbued Item:
+    fields:
+    - name: Name
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Description
+      type: text
+    - name: Effect
+      type: text
+  Pact Benefit:
+    fields:
+    - name: Merit
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Benefactor
+    display: card
+  Token:
+    fields:
+    - name: Name
+    - name: Type
+      type: select
+      select:
+      - Hedge-Forged
+      - Oath-Forged
+      - Stolen
+      - Hedgespun
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Description
+      type: text
+    - name: Effect
+      type: text
+    - name: Catch
+      type: text
+    - name: Drawback
+      type: text

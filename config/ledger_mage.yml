@@ -1,0 +1,65 @@
+---
+ledger:
+  Spell Control:
+    display: table
+    table_fields:
+    - Spell Name
+    - Start Date
+    - Duration
+    - Potency
+    fields:
+    - name: Spell Name
+    - name: Start Date
+    - name: Duration
+    - name: Potency
+  Yantras:
+    display: table
+    lockable: true
+    table_fields:
+    - Type
+    - Symbolism
+    - Notes
+    - Bonus
+    fields:
+    - name: Type
+      type: select
+      select:
+      - Path Tool
+      - Order Tool
+      - Dedicated Tool
+      - Persona
+    - name: Symbolism
+    - name: Notes
+    - name: Bonus
+      type: select
+      select:
+      - 1
+      - 2
+      - 3
+  Grimoire:
+    display: table
+    table_fields:
+      - Grimoire
+      - Type
+      - Source
+      - Rote
+      - Rote Skill
+      - Notes
+    fields:
+      - name: Grimoire
+      - name: Type
+        type: select
+        select: [Standard, Astral, Haunted]
+      - name: Source
+      - name: Rote
+      - name: Rote Skill
+      - name: Notes
+  Attainments:
+    display: table
+    table_fields:
+    - Name
+    - Effect
+    fields:
+    - name: Name
+    - name: Effect
+      type: text

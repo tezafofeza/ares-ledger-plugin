@@ -1,0 +1,872 @@
+---
+ledger:
+  Equipment:
+    fields:
+    - name: Name
+    - name: Category
+    - name: Die Bonus
+    - name: Durability
+    - name: Size
+    - name: Structure
+    - name: Availability
+    - name: Book
+    - name: Page
+    templates:
+    - name: Automotive Tools.Advanced (Garage)
+      category: Mental
+      die_bonus: 2
+      durability: 
+      size: 
+      structure: 
+      availability: 1
+      book: Chronicles of Darkness
+      page: 270
+    - name: Automotive Tools.Basic (Kit)
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 2
+      structure: 3
+      availability: 1
+      book: Chronicles of Darkness
+      page: 270
+    - name: Battering Ram
+      category: Physical
+      die_bonus: 4
+      durability: 3
+      size: 4
+      structure: 8
+      availability: 2
+      book: Chronicles of Darkness
+      page: 274
+    - name: Bear Trap
+      category: Physical
+      die_bonus: 2
+      durability: 3
+      size: 2
+      structure: 5
+      availability: 2
+      book: Chronicles of Darkness
+      page: 274
+    - name: Binoculars
+      category: Surveillance
+      die_bonus: 
+      durability: 2
+      size: 1
+      structure: 3
+      availability: 1
+      book: Hurt Locker
+      page: 146
+    - name: Bipods
+      category: Firearms
+      die_bonus: 
+      durability: 2
+      size: 2
+      structure: 4
+      availability: 1
+      book: Hurt Locker
+      page: 144
+    - name: Bug Sweepers
+      category: Surveillance
+      die_bonus: 2
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 3
+      book: Hurt Locker
+      page: 147
+    - name: Bugs (Listening Devices)
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 2
+      book: Hurt Locker
+      page: 146
+    - name: Cache 1
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 1-5
+      structure: 5
+      availability: 1
+      book: Chronicles of Darkness
+      page: 270
+    - name: Cache 2
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 1-5
+      structure: 5
+      availability: 2
+      book: Chronicles of Darkness
+      page: 270
+    - name: Cache 3
+      category: Mental
+      die_bonus: 3
+      durability: 2
+      size: 1-5
+      structure: 5
+      availability: 3
+      book: Chronicles of Darkness
+      page: 270
+    - name: Caltrops
+      category: Physical
+      die_bonus: 2
+      durability: 2
+      size: 2
+      structure: 3
+      availability: 2
+      book: Chronicles of Darkness
+      page: 274
+    - name: Camouflage Clothing
+      category: Physical
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 2
+      book: Chronicles of Darkness
+      page: 275
+    - name: Cash 1
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 277
+    - name: Cash 2
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 277
+    - name: Cash 3
+      category: Social
+      die_bonus: 3
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 3
+      book: Chronicles of Darkness
+      page: 277
+    - name: Cash 4
+      category: Social
+      die_bonus: 4
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 4
+      book: Chronicles of Darkness
+      page: 277
+    - name: Cash 5
+      category: Social
+      die_bonus: 5
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 5
+      book: Chronicles of Darkness
+      page: 277
+    - name: Climbing Gear
+      category: Physical
+      die_bonus: 2
+      durability: 3
+      size: 2
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 275
+    - name: Code Kit
+      category: Mental
+      die_bonus: 5
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 271
+    - name: Collapsible Stocks
+      category: Firearms
+      die_bonus: 
+      durability: 2
+      size: 
+      structure: 3
+      availability: 2
+      book: Hurt Locker
+      page: 145
+    - name: Communications Headset
+      category: Mental
+      die_bonus: 2
+      durability: 0
+      size: 1
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 271
+    - name: Cracking Software
+      category: Mental
+      die_bonus: 2
+      durability: 
+      size: 
+      structure: 
+      availability: 3
+      book: Chronicles of Darkness
+      page: 271
+    - name: Crime Scene Kit
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 271
+    - name: Crowbar
+      category: Physical
+      die_bonus: 2
+      durability: 3
+      size: 2
+      structure: 4
+      availability: 1
+      book: Chronicles of Darkness
+      page: 275
+    - name: Digital Recorder 1
+      category: Mental
+      die_bonus: 1
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 271
+    - name: Digital Recorder 2
+      category: Mental
+      die_bonus: 2
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 271
+    - name: Disguise 1
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 3
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 277
+    - name: Disguise 2
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 3
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 277
+    - name: Disguise 3
+      category: Social
+      die_bonus: 3
+      durability: 1
+      size: 3
+      structure: 2
+      availability: 3
+      book: Chronicles of Darkness
+      page: 277
+    - name: Disguised Camera
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 2
+      book: Hurt Locker
+      page: 147
+    - name: Duct Tape
+      category: Mental
+      die_bonus: 1
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: Ear Protection
+      category: Firearms
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 144
+    - name: Fashion 1
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 277
+    - name: Fashion 2
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 277
+    - name: Fashion 3
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 3
+      book: Chronicles of Darkness
+      page: 277
+    - name: Fashion 4
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 4
+      book: Chronicles of Darkness
+      page: 277
+    - name: Fashion 5
+      category: Social
+      die_bonus: 3
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 5
+      book: Chronicles of Darkness
+      page: 277
+    - name: Firearm Suppressor
+      category: Physical
+      die_bonus: 2
+      durability: 2
+      size: 1
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 275
+    - name: First-Aid Kit 1
+      category: Mental
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: First-Aid Kit 2
+      category: Mental
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 2
+      book: Chronicles of Darkness
+      page: 272
+    - name: Flashlight
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 1
+      structure: 3
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: Gas Mask
+      category: Physical
+      die_bonus: 5
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 2
+      book: Chronicles of Darkness
+      page: 275
+    - name: Glowstick
+      category: Mental
+      die_bonus: 2
+      durability: 1
+      size: 1
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: GPS Tracker
+      category: Mental
+      die_bonus: 3
+      durability: 2
+      size: 2
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 272
+    - name: Gunsmithing Kit
+      category: Firearms
+      die_bonus: 2
+      durability: 2
+      size: 2
+      structure: 4
+      availability: 2
+      book: Hurt Locker
+      page: 144
+    - name: Handcuffs
+      category: Physical
+      die_bonus: 2
+      durability: 4
+      size: 1
+      structure: 4
+      availability: 1
+      book: Chronicles of Darkness
+      page: 275
+    - name: Instrument 1
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 277
+    - name: Instrument 2
+      category: Social
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 277
+    - name: Instrument 3
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 3
+      book: Chronicles of Darkness
+      page: 277
+    - name: Instrument 4
+      category: Social
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 4
+      book: Chronicles of Darkness
+      page: 277
+    - name: Instrument 5
+      category: Social
+      die_bonus: 3
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 5
+      book: Chronicles of Darkness
+      page: 277
+    - name: Keylogging Software
+      category: Mental
+      die_bonus: 2
+      durability: 
+      size: 
+      structure: 
+      availability: 2
+      book: Chronicles of Darkness
+      page: 272
+    - name: Keystroke Logger
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 147
+    - name: Light Mount
+      category: Firearms
+      die_bonus: 1
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 144
+    - name: Lockpicking Kit
+      category: Physical
+      die_bonus: 2
+      durability: 2
+      size: 2
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 275
+    - name: Luminol
+      category: Mental
+      die_bonus: 2
+      durability: 0
+      size: 1
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: Multi-Tool
+      category: Mental
+      die_bonus: 1
+      durability: 3
+      size: 1
+      structure: 4
+      availability: 1
+      book: Chronicles of Darkness
+      page: 272
+    - name: NBC Suit
+      category: Survival
+      die_bonus: 5
+      durability: 1
+      size: 5
+      structure: 6
+      availability: 2
+      book: Hurt Locker
+      page: 148
+    - name: Night Vision Goggles
+      category: Physical
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 276
+    - name: Pepper Spray
+      category: Physical
+      die_bonus: 1
+      durability: 2
+      size: 1
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 276
+    - name: Personal Computer 1
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 273
+    - name: Personal Computer 2
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 2
+      book: Chronicles of Darkness
+      page: 273
+    - name: Personal Computer 3
+      category: Mental
+      die_bonus: 3
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 3
+      book: Chronicles of Darkness
+      page: 273
+    - name: Personal Computer 4
+      category: Mental
+      die_bonus: 4
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 4
+      book: Chronicles of Darkness
+      page: 273
+    - name: Potassium Iodide (Bottle)
+      category: Survival
+      die_bonus: 1
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 2
+      book: Hurt Locker
+      page: 148
+    - name: Reloading Bench
+      category: Firearms
+      die_bonus: 2
+      durability: 2
+      size: 5
+      structure: 6
+      availability: 2
+      book: Hurt Locker
+      page: 144
+    - name: Reverse Peephole
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 147
+    - name: Rope
+      category: Physical
+      die_bonus: 1
+      durability: 2
+      size: 3
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 276
+    - name: Sighting Tools
+      category: Firearms
+      die_bonus: 2
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 2
+      book: Hurt Locker
+      page: 145
+    - name: Sights, Fiber Optic
+      category: Firearms
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 145
+    - name: Sights, Laser
+      category: Firearms
+      die_bonus: 1
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 2
+      book: Hurt Locker
+      page: 145
+    - name: Sights, Telescopic
+      category: Firearms
+      die_bonus: 
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 1
+      book: Hurt Locker
+      page: 145
+    - name: Sights, Telescopic (Night Vision)
+      category: Firearms
+      die_bonus: 
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 3
+      book: Hurt Locker
+      page: 145
+    - name: Sights, Telescopic (Thermal)
+      category: Firearms
+      die_bonus: 
+      durability: 2
+      size: 2
+      structure: 4
+      availability: 5
+      book: Hurt Locker
+      page: 145
+    - name: Smartphone 1
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 1
+      structure: 1
+      availability: 1
+      book: Chronicles of Darkness
+      page: 273
+    - name: Smartphone 2
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 1
+      structure: 1
+      availability: 2
+      book: Chronicles of Darkness
+      page: 273
+    - name: Smartphone 3
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 1
+      structure: 1
+      availability: 3
+      book: Chronicles of Darkness
+      page: 273
+    - name: Special Effects
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 5
+      structure: 3
+      availability: 3
+      book: Chronicles of Darkness
+      page: 273
+    - name: Speedloader
+      category: Firearms
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 145
+    - name: Spyware
+      category: Surveillance
+      die_bonus: 2
+      durability: 
+      size: 
+      structure: 
+      availability: 2
+      book: Hurt Locker
+      page: 147
+    - name: Stun Gun
+      category: Physical
+      die_bonus: 
+      durability: 2
+      size: 1
+      structure: 2
+      availability:
+      - 1
+      - 2
+      - 3
+      book: Chronicles of Darkness
+      page: 277
+    - name: Suppressor
+      category: Firearms
+      die_bonus: 
+      durability: 3
+      size: 1
+      structure: 4
+      availability: 3
+      book: Hurt Locker
+      page: 145
+    - name: Surveillance Equipment
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 2
+      structure: 2
+      availability: 3
+      book: Chronicles of Darkness
+      page: 273
+    - name: Survival Gear 1
+      category: Mental
+      die_bonus: 1
+      durability: 2
+      size: 2
+      structure: 3
+      availability: 1
+      book: Chronicles of Darkness
+      page: 273
+    - name: Survival Gear 2
+      category: Mental
+      die_bonus: 2
+      durability: 2
+      size: 3
+      structure: 3
+      availability: 3
+      book: Chronicles of Darkness
+      page: 273
+    - name: Survival Kit (Advanced)
+      category: Survival
+      die_bonus: 2
+      durability: 2
+      size: 2
+      structure: 4
+      availability: 2
+      book: Hurt Locker
+      page: 148
+    - name: Survival Kit (Basic)
+      category: Survival
+      die_bonus: 1
+      durability: 1
+      size: 2
+      structure: 3
+      availability: 1
+      book: Hurt Locker
+      page: 148
+    - name: Survival Kit (Superior)
+      category: Survival
+      die_bonus: 3
+      durability: 2
+      size: 3
+      structure: 5
+      availability: 3
+      book: Hurt Locker
+      page: 148
+    - name: Survival Kit (Urban)
+      category: Survival
+      die_bonus: 3
+      durability: 2
+      size: 2
+      structure: 4
+      availability: 2
+      book: Hurt Locker
+      page: 148
+    - name: Talcum Powder
+      category: Mental
+      die_bonus: 2
+      durability: 
+      size: 1
+      structure: 
+      availability: 1
+      book: Chronicles of Darkness
+      page: 273
+    - name: Tracking Device
+      category: Surveillance
+      die_bonus: 2
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 3
+      book: Hurt Locker
+      page: 147
+    - name: Ultraviolet Ink
+      category: Mental
+      die_bonus: 2
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Chronicles of Darkness
+      page: 273
+    - name: Wi-Fi Sniffer
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 1
+      book: Hurt Locker
+      page: 147
+    - name: Wiretap
+      category: Surveillance
+      die_bonus: 
+      durability: 1
+      size: 1
+      structure: 2
+      availability: 2
+      book: Hurt Locker
+      page: 147

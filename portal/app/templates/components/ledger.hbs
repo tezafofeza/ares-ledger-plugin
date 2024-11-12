@@ -1,0 +1,94 @@
+<div>
+  {{#if this.profileTabs}}
+  {{#in-element this.profileTabs insertBefore=null}}
+  <div id={{this.classId}} class="profile-tab">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active" href="#{{this.classId}}index">+</a></li>
+      {{#each this.tabs as |tab|}}
+      <li class="nav-item">
+        <a data-bs-toggle="tab" class="nav-link" href="#{{this.classId}}-{{tab.key}}">{{tab.value}}</a>
+      </li>
+      {{/each}}
+    </ul>
+
+    <div class="tab-content">
+      <div id="{{this.classId}}index" class="tab-pane fade show active">
+        <div class="tab-cover">{{this.ledger.title}}</div>
+      </div>
+
+      {{#each-in this.entriesByTemplate as |key ordered_stack|}}
+      <div id="{{this.classId}}-{{key}}" class="tab-pane fade ansi">
+        {{#each-in ordered_stack as |s_name type|}}
+        <div class="d-flex justify-content-between">
+          <h5>{{unless (eq s_name key) s_name}}</h5>
+          {{#if (get (get this.ledger.stacks key) 'add')}}
+          <a href="#" class="hint--top" aria-label="Add" {{action 'addEntry' (get this.ledger.stacks key) key
+            s_name}}><i class="fas fa-plus-circle" aria-label="Add Entry"></i></a>
+          {{/if}}
+        </div>
+
+        {{#let (get (get (get this.ledger.stacks key) 'template_config') s_name) as |t_config|}}
+        {{#if (if t_config (eq t_config.display 'table') (eq (get (get this.ledger.stacks key) 'display') 'table'))}}
+        <div>
+          <table class="table table-striped ledger-table">
+            <thead>
+              {{#if (get (get this.ledger.stacks key) 'lockable')}}
+              <th><i class="fas fa-lock"></i></th>
+              {{/if}}
+              {{#each (if t_config t_config.table_fields (get (get this.ledger.stacks key) 'table_fields')) as |title|}}
+              <th>{{title}}</th>
+              {{/each}}
+              {{#if (get this.hasOptions key)}}<th></th>{{/if}}
+            </thead>
+            <tbody>
+              {{#each-in type as |uuid entry|}}
+              {{#if entry}}
+              <tr>
+                <LedgerTableEntry @entriesByTemplate={{this.entriesByTemplate}} @tableFields={{if t_config
+                  t_config.table_fields (get (get this.ledger.stacks key) 'table_fields' )}}
+                  @editEntry={{this.editEntry}} @char={{this.char}} @stack={{get this.ledger.stacks key}}
+                  @entry={{entry}} @editStack={{this.editStack}} @add={{this.add}} @showEditEntry={{this.showEditEntry}}
+                  @hasOptions={{get this.hasOptions key}} @collection={{this.collection}} />
+              </tr>
+              {{/if}}
+              {{/each-in}}
+            </tbody>
+          </table>
+        </div>
+        {{else if (if t_config (eq t_config.display 'card') (eq (get (get this.ledger.stacks key) 'display')
+        'card'))}}
+        <div class="row">
+          {{#each-in type as |uuid entry|}}
+          {{#if entry}}
+          <div class="col-sm-12 col-md-6">
+            <LedgerEntry @entriesByTemplate={{this.entriesByTemplate}} @editEntry={{this.editEntry}} @char={{this.char}}
+              @stack={{get this.ledger.stacks key}} @entry={{entry}} @editStack={{this.editStack}} @add={{this.add}}
+              @showEditEntry={{this.showEditEntry}} @collection={{this.collection}} />
+          </div>
+          {{/if}}
+          {{/each-in}}
+        </div>
+
+        {{else}}
+        {{#each-in type as |uuid entry|}}
+        {{#if entry}}
+        <LedgerEntry @entriesByTemplate={{this.entriesByTemplate}} @editEntry={{this.editEntry}} @char={{this.char}}
+          @stack={{get this.ledger.stacks key}} @entry={{entry}} @editStack={{this.editStack}} @add={{this.add}}
+          @showEditEntry={{this.showEditEntry}} @collection={{this.collection}} />
+        {{/if}}
+        {{/each-in}}
+
+        {{/if}}
+        {{/let}}
+        {{/each-in}}
+      </div>
+      {{/each-in}}
+    </div>
+  </div>
+  {{/in-element}}
+  {{/if}}
+</div>
+
+<LedgerEntryForm @char={{this.char}} @add={{this.add}} @collection={{this.collection}} @stackName={{this.stackName}}
+  @stack={{this.editStack}} @entry={{this.editEntry}} @showEditEntry={{this.showEditEntry}}
+  @entriesByTemplate={{this.entriesByTemplate}} />

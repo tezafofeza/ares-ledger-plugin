@@ -1,0 +1,63 @@
+---
+ledger:
+  Frailties:
+    fields:
+    - name: Type
+      type: select
+      select:
+      - Minor
+      - Major
+    - name: Form
+      type: select
+      select:
+      - Bane
+      - Taboo
+    - name: Description
+      type: text
+    display: table
+    table_fields:
+    - Type
+    - Form
+    - Description
+  Goblin Fruit:
+    fields:
+    - name: Name
+    - name: Source
+    - name: Effect
+    - name: Quantity
+    display: table
+    table_fields:
+    - Name
+    - Source
+    - Effect
+    - Quantity
+  Tokens:
+    fields:
+    - name: Name
+    - name: Rating
+      type: select
+      select:
+      - "•"
+      - "••"
+      - "•••"
+      - "••••"
+      - "•••••"
+    - name: Type
+      type: select
+      select:
+      - Hedge-Forged
+      - Oath-Forged
+      - Stolen
+      - Hedgespun
+    - name: Effect
+      type: text
+    - name: Catch
+      type: text
+    - name: Drawback
+      type: text
+    - name: Motley
+  Touchstones:
+    fields:
+    - name: Name
+    - name: Description
+      type: text

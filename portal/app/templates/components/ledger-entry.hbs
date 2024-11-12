@@ -1,0 +1,103 @@
+<div class="card {{if this.override_ledger_card 'override-'}}ledger-card">
+  <div class="card-header">
+    <div>
+      {{#if this.entry.name }}<b>{{this.entry.name}}</b>{{/if}}
+      {{#if this.entry.locked}}
+      <span class="hint--right" aria-label="Locked by {{this.entry.locked_by.name}}"><i class="fas fa-lock"></i></span>
+      {{/if}}
+    </div>
+    <div class="entry-controls">
+      {{#if (and this.stack.lockable this.stack.lock)}}
+      {{#if this.entry.locked}}
+      <a href="#" class="hint--top" aria-label="Unlock" {{action 'unlockEntry' }}><i class="fas fa-unlock"
+          aria-label="Unlock Entry"></i></a>
+      {{else}}
+      <a href="#" class="hint--top" aria-label="Lock" {{action 'lockEntry' }}><i class="fas fa-lock"
+          aria-label="Lock Entry"></i></a>
+      {{/if}}
+      {{/if}}
+      {{#unless this.entry.locked}}
+      {{#if this.stack.edit}}
+      <a href="#" class="hint--top" aria-label="Edit" {{action 'editEntry' }}><i class="fas fa-edit"
+          aria-label="Edit Entry"></i></a>
+      {{/if}}
+      {{#if this.stack.delete}}
+      <a href="#" class="hint--top" aria-label="Delete" {{action 'deleteEntry' }}><i class="fas fa-trash"
+          aria-label="Delete Entry"></i></a>
+      {{/if}}
+      {{/unless}}
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      {{#each this.displayEntry as |e|}}
+      {{#if (and e.value (not (eq e.key 'name')))}}
+      {{#if e.md}}
+      <div class="entry-field-name" data-key="{{e.key}}">{{e.display}}</div>
+      <div class="entry-md">
+        <AnsiFormat @text={{e.value}} />
+      </div>
+      {{else}}
+      <div class="entry-field">
+        <span class="entry-field-name" data-key="{{e.key}}">{{e.display}}:</span>
+        <span class="entry-field-value">
+          {{e.value}}
+        </span>
+      </div>
+      {{/if}}
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+  <div class="entry-footer">
+    <div>
+      {{#if this.entry.locked}}
+      <div class="locked-on">
+        <span>Locked on {{this.locked_on}}</span>
+      </div>
+      {{/if}}
+    </div>
+    {{#if this.footnote}}
+    <div class="footnote">
+      {{this.footnote}}
+    </div>
+    {{/if}}
+  </div>
+</div>
+<style>
+  .ledger-card .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ledger-card .entry-field {
+    display: flex;
+    width: 50%;
+  }
+
+  .ledger-card .entry-field-name {
+    font-weight: bolder;
+    margin-right: 0.25rem;
+    text-transform: capitalize;
+  }
+
+  .ledger-card .entry-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .ledger-card .entry-footer .locked-on {
+    opacity: 0.7;
+    font-style: italic;
+    display: flex;
+    justify-content: start;
+  }
+
+  .ledger-card .entry-footer .footnote {
+    opacity: 0.7;
+    font-style: italic;
+    display: flex;
+    justify-content: end;
+  }
+</style>
